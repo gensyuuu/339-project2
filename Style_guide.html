@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Project 01 - Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:300,400,700" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <nav>
+      <a href="Style_guide.html" class = "navbutton">Style Guide</a>
+      <a href="User-flows.html" class = "navbutton">User-flows</a>
+      <a href="Citations.html" class = "navbutton">Citations</a>
+    </nav>
+
+    <h1>Project 01 - Style Guide</h1>
+
+
+
+    <nav>
+
+      <p>
+        On this page:
+      </p>
+      <ul>
+        <li>
+          <a href="#interactive_elements">Interactive Elements</a>
+        </li>
+        <li>
+          <a href="#text_elements">Text Elements</a>
+        </li>
+        <li>
+          <a href="#combined_elements">Combined Elements</a>
+        </li>
+      </ul>
+
+    </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Default Button styling section -->
+      <section>
+
+        <h2>Navigation Button</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.navbutton</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="navbutton"&gt;Default Button&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="navbutton" href="#">Default Button</a>
+
+      </section>
+
+      <section>
+        <h2>In-text link</h2>
+        <h3>CSS selector:</h3>
+        <p>.intextlink</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="intextlink"&gt;in-text link&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <p>this is a <a class="intextlink" href="#">in-text link</a><p>
+      </section>
+
+      <section>
+        <h2>Submit/Reset Buttons</h2>
+        <h3>CSS selector:</h3>
+        <p>.submit</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="submit"&gt;submit&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="submit" href="#">submit</a>
+        <h3>CSS selector:</h3>
+        <p>.reset</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="reset"&gt;reset&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="reset" href="#">reset</a>
+      </section>
+
+      <section>
+        <h2>Text Input Field</h2>
+        <h3>CSS selector:</h3>
+        <p>.label</p>
+        <p>.input</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;form action = "#"&gt;
+          &lt;label for = "username" class = "label"&gt;User name&lt;/label&gt;
+          &lt;input type = "text" name = "username" class = "input"&gt;
+          &lt;/form&gt;</code>
+
+
+        <h3>Rendered element:</h3>
+        <form action = "#">
+          <label for = "username" class="label">User name</label>
+          <input type="text" name = "username" id = "username" class="input">
+        </form>
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <section>
+        <h2>Headings</h2>
+        <h3>CSS selector:</h3>
+        <p>h1 h2 h3</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;h1&gt;heading 1&lt;/h1&gt;</code>
+        <code>&lt;h2&gt;heading 2&lt;/h2&gt;</code>
+        <code>&lt;h3&gt;heading 3&lt;/h3&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <h1 class= "h1">heading 1</h1>
+        <h2 class= "h2">heading 2</h2>
+        <h3 class= "h3">heading 3</h3>
+      </section>
+
+      <section>
+        <h2>Paragraphs</h2>
+        <h3>CSS selector:</h3>
+        <p>p</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;p&gt;paragraphs&lt;/p&gt;</code>
+
+
+        <h3>Rendered element:</h3>
+        <p>Lorem ipsum dolor sit amet, habeo ullum sadipscing at mel. Quo reque fabellas at, usu at eros iudico. Postea euripidis pro te, ad vitae petentium eloquentiam quo. Mei iuvaret aliquam at, est veri alienum eligendi ex. Ne cum nonumy graeci, eum ei quando essent persius, quis molestiae maiestatis at vis. Mucius fierent propriae usu in, pri ut ferri errem. </p>
+      </section>
+
+      <section>
+        <h2>Bulleted Lists</h2>
+        <h3>CSS selector:</h3>
+        <p>bullet</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;ul class = "bullet"&gt;</code>
+        <code>&lt;li&gt;item1&lt;/li&gt;</code>
+        <code>&lt;li&gt;item2&lt;/li&gt;</code>
+        <code>&lt;li&gt;item3&lt;/li&gt;</code>
+        <code>&lt;/ul&gt;</code>
+
+
+
+        <h3>Rendered element:</h3>
+        <ul class="bullet">
+          <li>item1</li>
+          <li>item2</li>
+          <li>item3</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Numbered Lists</h2>
+        <h3>CSS selector:</h3>
+        <p>numlist</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;ol class = "numlist"&gt;</code>
+        <code>&lt;li&gt;item1&lt;/li&gt;</code>
+        <code>&lt;li&gt;item2&lt;/li&gt;</code>
+        <code>&lt;li&gt;item3&lt;/li&gt;</code>
+        <code>&lt;/ol&gt;</code>
+
+
+
+        <h3>Rendered element:</h3>
+        <ol class="numlist">
+          <li>item1</li>
+          <li>item2</li>
+          <li>item3</li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section>
+        <h2>Main Navigation</h2>
+        <h3>CSS selector:</h3>
+        <p>.navigation .navbutton</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;nav class = "navigation"&gt;</code>
+        <code>&lt;a href="#" class="navbutton"&gt;Artists&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="navbutton"&gt;Artwork&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="navbutton"&gt;Shop&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="navbutton"&gt;Sign in&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="navbutton"&gt;Sign up&lt;/a&gt;</code>
+        <code>&lt;/nav&gt;</code>
+
+
+
+        <h3>Rendered element:</h3>
+        <nav class = "navigation">
+          <a href="Style_guide.html" class = "navbutton">Artists</a>
+          <a href="User-flows.html" class = "navbutton">Artwork</a>
+          <a href="Citations.html" class = "navbutton">Shop</a>
+          <a href="Citations.html" class = "navbutton">Sign in</a>
+          <a href="Citations.html" class = "navbutton">Sign up</a>
+        </nav>
+      </section>
+
+      <section>
+        <h2>Product Listing</h2>
+        <h3>CSS selector:</h3>
+        <p>.flex-grid .three-col</p>
+        <h3>Sample code:</h3>
+        <code>&lt;div class = "flex-grid"&gt;</code>
+        <code>&lt;div class = "three-col"&gt;</code>
+        <code>&lt;a href="#"&gt;
+        &lt;img src="sct"&gt;</code>
+        <code>&lt;/a&gt;</code>
+        <code>&lt;p&gt;artwork&lt;/p&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;/div&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <div class="flex-grid">
+          <div class = "three-col">
+            <a href="#"><img src="img/65d721_761db9a0c113407f924a824ed173ed26.png" alt="sct"></a>
+            <p>artwork 01</p>
+          </div>
+          <div class = "three-col">
+            <a href="#"><img src="img/65d721_4d7ac0c34c4b43f38320381124c87fdb-mv2.png" alt="sct"></a>
+            <p>artwork 02</p>
+            </div>
+            <div class = "three-col">
+            <a href="#"><img src="img/65d721_4dfa47a05152487fb3bc45ca2ec8fd1e.png" alt="sct"></a>
+            <p>artwork 03</p>
+            </div>
+            <div class = "three-col">
+            <a href="#"><img src="img/65d721_8cbd84d2a1fb442cb3a017fdda2e1abd-mv2.png" alt="sct"></a>
+            <p>artwork 04</p>
+            </div>
+            <div class = "three-col">
+            <a href="#"><img src="img/65d721_656530a40b693b9fd1c1fb42477a15c1.png" alt="sct"></a>
+            <p>artwork 05</p>
+            </div>
+            <div class = "three-col">
+            <a href="#"><img src="img/65d721_f9c68a3a88c54f2fa74a9e28b92fe31f-mv2.png" alt="sct"></a>
+            <p>artwork 06</p>
+            </div>
+        </div>
+
+      </section>
+
+      <section>
+        <h2>Grid Structure</h2>
+        <h3>CSS selector:</h3>
+        <p>.flex-grid .three-col .one-col</p>
+        <h3>Sample code:</h3>
+        <code>&lt;div class = "flex-grid"&gt;</code>
+        <code>&lt;div class = "one-col"&gt; navigation&lt;/div&gt;</code>
+        <code>&lt;div class = "three-col"&gt; img &lt;/div&gt;</code>
+        <code>&lt;div class = "three-col"&gt; img&lt;/div&gt;</code>
+        <code>&lt;div class = "three-col"&gt; img&lt;/div&gt;</code>
+        <code>&lt;div class = "one-col"&gt; footer&lt;/div&gt;</code>
+        <code>&lt;/div&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <div class="flex-grid structure">
+          <div class= "one-col"> navigation </div>
+          <div class = "three-col"> img </div>
+          <div class = "three-col"> img </div>
+          <div class = "three-col"> img </div>
+          <div class= "one-col"> footer </div>
+        </div>
+
+      </section>
+
+      <section>
+        <h2>Color Swatches</h2>
+        <h3>CSS selector:</h3>
+        <p>.color .c1 .c2 .c3 .c4 .c5</p>
+        <h3>Sample code:</h3>
+        <code>&lt;p class="color c1"&gt;#012D41&lt;/p&gt;</code>
+        <code>&lt;p class="color c2"&gt;#1BA5B8&lt;/p&gt;</code>
+        <code>&lt;p class="color c3"&gt;#DAECF3&lt;/p&gt;</code>
+        <code>&lt;p class="color c4"&gt;#FF4041&lt;/p&gt;</code>
+        <code>&lt;p class="color c5"&gt;#1CA5B8&lt;/p&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <p class="color c1">#012D41</p>
+        <p class="color c2">#1BA5B8</p>
+        <p class="color c3">#DAECF3</p>
+        <p class="color c4">#FF4041</p>
+        <p class="color c5">#1CA5B8</p>
+
+    </section>
+  </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+
+  </body>
+</html>
