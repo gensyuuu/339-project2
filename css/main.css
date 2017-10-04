@@ -237,6 +237,8 @@ img {
   padding: 1rem;
   border-radius: 10px;
   border-style: solid;
+  display: inline-block;
+  width: 10%;
 }
 
 .c1 {
@@ -248,16 +250,25 @@ img {
   background-color: #1BA5B8;
   color: white;
 }
+
 .c3 {
-  background-color: #DAECF3;
+  background-color: #157B9A;
+  color: white;
 }
 .c4 {
   background-color: #FF4041;
   color: white;
 }
 .c5 {
-  background-color: #1CA5B8;
+  background-color: #BA2F2F;
   color: white;
+}
+.c6 {
+  background-color: #586473;
+  color: white;
+}
+.c7 {
+  background-color: #E7DACB;
 }
 
 @media (max-width:62.5em) {
