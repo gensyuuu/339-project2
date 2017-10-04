@@ -83,8 +83,8 @@ cite {
 }
 
 .navbutton:hover, .navbutton:focus {
-  color: #012D41;
-  border-bottom: 3px solid #012D41;
+  color: #586473;
+  border-bottom: 3px solid #586473;
 }
 
 .intextlink {
@@ -185,6 +185,17 @@ p {
 
 .navigation {
   border: none;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.navelement {
+  flex-basis: 10rem;
+
 }
 
 img {
