@@ -259,3 +259,9 @@ img {
   background-color: #1CA5B8;
   color: white;
 }
+
+@media (max-width:62.5em) {
+  .three-col{
+    width: 100%;
+  }
+}
