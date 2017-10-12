@@ -63,6 +63,11 @@ cite {
   font-style: normal;
 }
 
+a {
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-weight: 300;
+}
+
 
 /*
   INTERACTIVE ELEMENTS -------------------
@@ -129,11 +134,13 @@ cite {
   background-color: #BA2F2F;
 }
 
+
 .label {
   display: block;
 }
 .input {
-  width: 20%;
+  width: 60%;
+
 }
 
 
@@ -156,12 +163,16 @@ cite {
   font-weight: 300;
   color: #1ba5b8;
   font-size: 40px;
+  text-align: center;
 }
 .h3 {
   font-family: 'Encode Sans Expanded', sans-serif;
   font-weight: 300;
   color: #1ba5b8;
-  font-size: 30px;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
 }
 p {
   font-family: 'Encode Sans Expanded', sans-serif;
@@ -171,11 +182,33 @@ p {
 }
 
 .bullet {
-  list-style-type: circle;
+  list-style-type: none;
+}
+
+.bullet li::before {
+  content: "◦ ";
+  color: #ff4041;
 }
 
 .numlist {
-  list-style-type: decimal;
+  list-style-type: none;
+}
+
+
+.numlist li::before {
+  content: inherit;
+  color: red;
+}
+
+.numlist li {
+    counter-increment: count-me;
+}
+
+
+.numlist li::before {
+    content: counter(count-me) ". ";
+    color: #ff4041;
+
 }
 
 
@@ -187,16 +220,27 @@ p {
   border: none;
 }
 
+
+
 .navbar {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  position: relative;
+  right: 3rem;
 }
 
 .navelement {
   flex-basis: 10rem;
 
 }
+
+.navlogo {
+  position: absolute;
+  left:3rem;
+}
+
+
 
 img {
   height: 200px;
@@ -211,7 +255,7 @@ img {
 .three-col {
   -ms-flex-grow: 1;
   flex-grow: 1;
-  width: 300px;
+  width: 25rem;
 
 }
 
@@ -223,13 +267,27 @@ img {
 
 .three-col p {
   text-align: center;
+  display: block;
+  margin: auto;
 }
+
+.three-col img {
+  display: block;
+  margin: auto;
+}
+
+
 
 .structure div{
   background: #ff4041;
   text-align: center;
   color: white;
   border-style: solid;
+}
+
+.banner .one-col {
+  padding: 10rem;
+  height: 100px;
 }
 
 .color {
@@ -271,12 +329,165 @@ img {
   background-color: #E7DACB;
 }
 
-@media (max-width:62.5em) {
-  .three-col{
-    width: 100%;
-  }
+.footer .three-col {
+  margin: auto;
+  margin-top: 2em;
+  padding-top: 1rem;
+  text-align: center;
+  border-top: 0.15em solid #333;
+}
+
+
 
 .sitemapimg {
   width: 100%;
   height: auto;
 }
+
+.filter {
+  padding-bottom: 2rem;
+}
+
+.filter table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.filter th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+.filter tr:nth-child(even){background-color: #f2f2f2}
+
+.abouttext {
+  width: 80%;
+  margin: auto;
+}
+
+.abouttext figure{
+  float: left;
+  margin: 1rem;
+}
+
+.abouttext h3 {
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-weight: 300;
+  color: #1ba5b8;
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 0.5rem;
+  padding-top: 0;
+}
+
+.abouttext p{
+  width: 100%;
+}
+
+.search {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.search input{
+  width: 50%;
+  display: inline-block;
+  height: 35px;
+
+}
+
+.contact img{
+  width: 100px;
+  height: auto;
+}
+
+.artworkdetail img{
+  width: 90%;
+  height: auto;
+}
+
+.artworkdetail p{
+  width: 90%;
+  text-align: left;
+  padding: 0;
+}
+
+.artworkdetail a{
+  width: 90%;
+  text-align: center;
+  margin: 1rem;
+}
+
+.artworkdetail .h3{
+  padding: 0;
+  font-size: 30px;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+
+
+.profile img {
+  width: 20%;
+  margin: 1rem;
+  float: left;
+  display: block;
+}
+
+.two-col1 {
+  flex-grow: 1;
+  flex-basis: 30%;
+}
+
+.two-col2 {
+  flex-grow: 2;
+  flex-basis: 70%;
+}
+
+.two-col2 select {
+  margin-left: 1rem;
+  width: 90%;
+  height: 40px;
+  text-align: center;
+}
+
+.pairbutton a{
+  display: inline-block;
+  width: 40%;
+}
+
+.subtotal .h3{
+  display: block;
+  text-align:right;
+  margin-right: 4rem;
+}
+
+.successinfo  a{
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 40%;
+}
+
+.account .two-col1{
+  flex-basis: 50%;
+}
+
+.two-col1 form {
+  text-align: center;
+}
+
+.login {
+  width: 60%;
+  margin-top: 2rem;
+}
+
+
+
+
+
+@media (max-width:62.5em) {
+  .three-col{
+    width: 100%;
+  }
