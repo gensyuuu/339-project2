@@ -14,7 +14,7 @@
   <body>
     <!-- navigation bar -->
     <nav class = "navigation navbar">
-      <div class = "navlogo"><a href="index.html">Navlogo</a></div>
+      <div class = "navlogo"><a href="index.html"><img src = "img/logo.png" alt = "logo"></a></div>
       <div class = "navelement"><a href="artists.html" class = "navbutton">Artists</a></div>
       <div class = "navelement"><a href="artwork.html" class = "navbutton">Artworks</a></div>
       <div class = "navelement"><a href="events.html" class = "navbutton">Events</a></div>
@@ -30,22 +30,37 @@
 
     <div class="flex-grid">
       <div class = "two-col1">
-        <a href="#"><img src="img/65d721_761db9a0c113407f924a824ed173ed26.png" alt="sct"></a>
+        <img src="img/65d721_761db9a0c113407f924a824ed173ed26.png" alt="sct">
       </div>
       <div class = "two-col2">
-        <nav>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. +$0</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. +$10</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. +$10</p>
-
-        <p>Base: $50</p>
+        <nav class="filter">
+        <table>
+          <tr>
+            <th>How many characters?</th>
+            <td>3</td>
+            <td>+ $40</td>
+          </tr>
+          <tr>
+            <th>What kind of background style?</th>
+            <td>Full colored background</td>
+            <td>+ $20</td>
+          </tr>
+          <tr>
+            <th>What kind of color style?</th>
+            <td>Only shaded</td>
+            <td>- $10</td>
+          </tr>
+          <tr>
+            <th>Base price</th>
+            <td> </td>
+            <td>$50</td>
+          </tr>
+        </table>
       </nav>
       <div class = "subtotal">
-      <h3 class="h3">Subtotal: $70</h3>
+      <h3 class="h3">Subtotal: $100</h3>
     </div>
-        <div class="pairbutton">
+        <div class="pairbutton reviewbutton">
           <a class="reset" href="modify.html">Cancel</a>
           <a class="submit" href="success.html">Submit</a>
         </div>
