@@ -15,11 +15,34 @@
     <!-- navigation bar -->
     <nav class = "navigation navbar">
       <div class = "navlogo"><a href="index.html"><img src = "img/logo.png" alt = "logo"></a></div>
-      <div class = "navelement"><a href="artists.html" class = "navbutton">Artists</a></div>
-      <div class = "navelement"><a href="artwork.html" class = "navbutton">Artworks</a></div>
-      <div class = "navelement"><a href="events.html" class = "navbutton">Events</a></div>
-      <div class = "navelement"><a href="account.html" class = "navbutton">Account</a></div>
+      <div class = "navspace"></div>
+        <div class = "navelement"><a href="artists.html" class = "navbutton">Artists</a></div>
+        <div class = "navelement"><a href="artwork.html" class = "navbutton">Artworks</a></div>
+        <div class = "navelement"><a href="events.html" class = "navbutton">Events</a></div>
+
     </nav>
+
+    <!-- this is burger menu for the mobile -->
+    <div class = "mobilemenu">
+
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+        <a href="artists.html" class = "navbutton">Artists</a>
+        <a href="artwork.html" class = "navbutton">Artworks</a>
+        <a href="events.html" class = "navbutton">Events</a>
+        </div>
+        </div>
+        <div class = "navlogo">
+          <a href="index.html" ><img src = "img/logo.png" alt = "logo"></a>
+        <span  onclick="openNav()" class = "burgericon">&#9776; </span>
+      </div>
+
+      </div>
+
+
+
+        <!-- burger menu end here -->
 
     <!-- banner -->
     <div class="flex-grid banner">
@@ -60,6 +83,43 @@
 </table>
 </div>
 
+<!-- mobile filter start here -->
+
+<div class = "mobilefilter">
+  <div class = "filteroption">
+  <label>Order: </label>
+  <select>
+    <option value="newest">Newest</option>
+    <option value="popular">Most Popular</option>
+  </select>
+</div>
+<div class = "filteroption">
+  <label>Type:&nbsp; </label>
+  <select>
+    <option value="Character Design">Character Design</option>
+    <option value="Scenery Design">Scenery Design</option>
+    <option value="Comic">Comic</option>
+    <option value="Illustration">Illustration</option>
+    <option value="Poster">Poster</option>
+    <option value="CG">CG</option>
+  </select>
+</div>
+<div class = "filteroption">
+  <label>Style:&nbsp; </label>
+  <select>
+    <option value="American">American</option>
+    <option value="Japanese">Japanese</option>
+    <option value="Korean">Korean</option>
+    <option value="Chinese">Chinese</option>
+    <option value="Pixel">Pixel</option>
+    <option value="Realism">Realism</option>
+  </select>
+</div>
+
+</div>
+
+<!-- mobile filter ends here -->
+
 
 <div class="thumb">
 
@@ -90,6 +150,7 @@
       </div>
   </div>
 </div>
+</section>
 
 
     <!-- footer -->
@@ -99,12 +160,12 @@
             <a class="intextlink" href="about.html">About Us</a>
           </div>
           <div class = "three-col">
-            <a class="intextlink" href="termsofuse.html">Terms of Use</a>
+            <a class="intextlink" href="Style_guide.html">Style Guide/Citations/Github</a>
           </div>
           <div class = "three-col">
             <a class="intextlink" href="contact.html">Contact Us</a>
           </div>
         </div>
-
+<script src="js/mobile_menu.js"></script>
   </body>
   </html>
