@@ -15,37 +15,68 @@
     <!-- navigation bar -->
     <nav class = "navigation navbar">
       <div class = "navlogo"><a href="index.html"><img src = "img/logo.png" alt = "logo"></a></div>
+      <div class = "navspace"></div>
         <div class = "navelement"><a href="artists.html" class = "navbutton">Artists</a></div>
         <div class = "navelement"><a href="artwork.html" class = "navbutton">Artworks</a></div>
         <div class = "navelement"><a href="events.html" class = "navbutton">Events</a></div>
-        <div class = "navelement"><a href="account.html" class = "navbutton">Account</a></div>
+
     </nav>
+
+<!-- this is burger menu for the mobile -->
+<div class = "mobilemenu">
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+    <a href="artists.html" class = "navbutton">Artists</a>
+    <a href="artwork.html" class = "navbutton">Artworks</a>
+    <a href="events.html" class = "navbutton">Events</a>
+    </div>
+    </div>
+    <div class = "navlogo">
+      <a href="index.html" ><img src = "img/logo.png" alt = "logo"></a>
+    <span  onclick="openNav()" class = "burgericon">&#9776; </span>
+  </div>
+
+  </div>
+
+
+
+    <!-- burger menu end here -->
+
+
 
 <!-- events -->
 <div class="flex-grid banner">
   <div class= "one-col">
-    <figure class = "captioninside">
-    <a href = "events.html" class = "blur"> <img src = "img/65d721_116745a5d0dd412b9355ed66d0c27d4e.png" alt = "homebanner"> </a>
-    <figcaption class = "hide">Discount Event</figcaption>
-  </figure>
+
+    <a href = "events.html" class = "blur"> <img src = "img/65d721_116745a5d0dd412b9355ed66d0c27d4e.jpg" alt = "homebanner"> </a>
+
+
   </div>
 </div>
 <!-- show case artist -->
-<section id="artists">
+<section id = "artist">
   <h2 class="h2 hometitle">Newest Artists</h2>
     <div class="flex-grid">
-      <div class = "three-col">
-        <a href="artistdetail.html"><img src="img/65d721_761db9a0c113407f924a824ed173ed26_meitu_4.jpg" alt="sct"></a>
-        <a href="artistdetail.html" class="intextlink"><p>Pilgrimage</p></a>
+      <div class = "three-col homeartist">
+        <a href="artistdetail.html"><img src = "img/tumblr_ms5fl1J7DJ1qgsw73o1_r1_1280c.png" alt = "prf"></a>
+        <a href="artistdetail.html" class="intextlink">Sachin Teng</a>
+        <p class = "attribution">Rate: 8.6</p>
+
       </div>
-      <div class = "three-col">
-        <a href="#"><img src="img/65d721_4d7ac0c34c4b43f38320381124c87fdb-mv2_meitu_1.jpg" alt="sct"></a>
-        <a href="artistdetail.html" class="intextlink"><p>2050</p></a>
-        </div>
-        <div class = "three-col">
-        <a href="#"><img src="img/65d721_4dfa47a05152487fb3bc45ca2ec8fd1e_meitu_2.jpg" alt="sct"></a>
-        <a href="artistdetail.html" class="intextlink"><p>Nickelodeon Art</p></a>
-        </div>
+      <div class = "three-col homeartist">
+        <a href="artistdetail.html"><img src = "img/26605861_p0_meitu_11.png" alt = "prf"></a>
+        <a href="artistdetail.html" class="intextlink">Natsume Kazuki</a>
+        <p class = "attribution">Rate: 7.8</p>
+
+      </div>
+      <div class = "three-col homeartist">
+        <a href="artistdetail.html"><img src = "img/tumblr_lwi05bxXHA1qfxndqo1_500_meitu_13.png" alt = "prf"></a>
+        <a href="artistdetail.html" class="intextlink">Kohske</a>
+        <p class = "attribution">Rate: 8.0</p>
+
+      </div>
       </div>
     </section>
 
@@ -55,15 +86,15 @@
       <h2 class="h2 hometitle">Newest Artworks</h2>
         <div class="flex-grid">
           <div class = "three-col">
-            <a href="artworkdetail.html" class = "intextlink"><img src="img/65d721_8cbd84d2a1fb442cb3a017fdda2e1abd-mv2_meitu_3.jpg" alt="sct"></a>
+            <a href="artworkdetail2.html" class = "intextlink"><img src="img/65d721_8cbd84d2a1fb442cb3a017fdda2e1abd-mv2_meitu_3.jpg" alt="sct"></a>
             <a href="artworkdetail.html" class = "intextlink"><p>Q POP</p></a>
           </div>
           <div class = "three-col">
-            <a href="#"><img src="img/65d721_656530a40b693b9fd1c1fb42477a15c1_meitu_5.jpg" alt="sct"></a>
+            <a href="artworkdetail.html"><img src="img/65d721_656530a40b693b9fd1c1fb42477a15c1_meitu_5.jpg" alt="sct"></a>
             <a href="artworkdetail.html" class = "intextlink"><p>Paper Tiger</p></a>
             </div>
             <div class = "three-col">
-            <a href="#"><img src="img/65d721_f9c68a3a88c54f2fa74a9e28b92fe31f-mv2_meitu_6.jpg" alt="sct"></a>
+            <a href="artworkdetail.html"><img src="img/65d721_f9c68a3a88c54f2fa74a9e28b92fe31f-mv2_meitu_6.jpg" alt="sct"></a>
             <a href="artworkdetail.html" class = "intextlink"><p>Viscera</p></a>
             </div>
           </div>
@@ -76,12 +107,14 @@
             <a class="intextlink" href="about.html">About Us</a>
           </div>
           <div class = "three-col">
-            <a class="intextlink" href="termsofuse.html">Terms of Use</a>
+            <a class="intextlink" href="Style_guide.html">Style Guide/Citations/Github</a>
           </div>
           <div class = "three-col">
             <a class="intextlink" href="contact.html">Contact Us</a>
           </div>
         </div>
+
+        <script src="js/mobile_menu.js"></script>
 
   </body>
   </html>

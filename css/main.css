@@ -3,7 +3,7 @@
   Default styling for the style guide
 */
 body {
-  font-family: sans-serif;
+  font-family: 'Encode Sans Expanded', sans-serif;
   padding: 2rem;
 }
 
@@ -238,25 +238,24 @@ ul,li{
 .navbar {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-between;
   position: relative;
 
 }
 
-.navelement {
-  flex-basis: 10rem;
-
-
+.navspace {
+  flex: 1;
 }
 
-.navlogo {
-  position: absolute;
-  left:3rem;
+.navelement {
+  text-align: center;
+  flex-basis: 10rem;
 }
 
 .navlogo img {
   height: auto;
   width: 120px;
+  margin-left: 2rem;
 }
 
 
@@ -268,14 +267,13 @@ img {
 .flex-grid {
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: space-between;
 }
 
 .three-col {
   -ms-flex-grow: 1;
   flex-grow: 1;
   width: 24rem;
-
 }
 
 .one-col {
@@ -314,43 +312,22 @@ img {
 }
 
 .banner img {
-  width: 1150px;
+  width: 100%;
   height: auto;
 }
+
 
 .blur {
   transition: filter 0.5s ease-out;
 }
 
-/*.hide {
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-}
-
-.banner:hover .hide{
-  opacity: 1;
-}*/
 
 .blur:hover{
   -webkit-filter:blur(3px);
 }
 
 
-.captioninside {
-	position: relative;
-}
 
-
-
-.captioninside figcaption {
-	position: absolute;
-	bottom: 5rem;
-  left: 32rem;
-	background-color: black;
-	color: white;
-	padding: 0.5rem;
-  font-size: 20px;
-}
 
 .color {
   text-align: center;
@@ -435,6 +412,7 @@ img {
 }
 
 .filter tr:nth-child(even){background-color: #f2f2f2}
+
 
 .thumb img{
   margin-top: 2rem;
@@ -534,20 +512,23 @@ img {
   margin-right: auto;
 }
 
-
+select {
+  font-size: 15px;
+}
 
 
 .profile img {
   width: 6.5rem !important;
   float: left;
-  margin: auto;
+  margin-right: 1rem;
+
   display: block;
-  padding-right: 5px;
+
 }
 
 .profile p {
   margin: 0;
-  padding-left: 1rem;
+
   padding-bottom: 0;
 }
 
@@ -584,6 +565,11 @@ img {
   margin: auto;
 }
 
+.artistdetail p {
+  width: 80%;
+  margin: auto;
+}
+
 .artistdetail .attribution {
   display: inline;
   margin: auto;
@@ -603,7 +589,11 @@ img {
 .pairbutton,.singlebutton {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  margin-left: 0.5rem;
+
+}
+
+.singlebutton {
+  width: 91%;
 }
 
 .pairbutton a{
@@ -619,6 +609,7 @@ img {
 .subtotal .h3{
   display: block;
   text-align:right;
+  margin-right: 3rem;
 
 }
 
@@ -632,6 +623,13 @@ img {
   margin: auto;
   text-align: center;
   width: 40%;
+}
+
+.successinfo p {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1rem;
 }
 
 .account .two-col1{
@@ -648,10 +646,184 @@ img {
 }
 
 
+/*this is for mobile menu*/
+
+.mobilemenu {
+  display: none;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    background-color: rgba(0,0,0, 0.9);
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.homeartist img {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
+
+.homeartist .intextlink {
+  display: block;
+  text-align: center;
+}
+
+.mobilefilter {
+  display: none;
+}
+
+.filteroption {
+  display: block;
+  text-align: center;
+    margin-bottom: 1rem;
+}
+
+.mobilefilter select{
+
+  width: 50%;
+  height: 2.5rem;
+  margin: auto;
+}
 
 
 
-@media (max-width:62.5em) {
+
+
+
+
+
+/*mobile menu css end here*/
+
+@media (max-width:61.8em) {
+
+
   .three-col{
     width: 100%;
   }
+
+  .filter {
+    display: none;
+  }
+
+  .mobilefilter {
+    display: block;
+  }
+
+  .pairbutton,.singlebutton {
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .singlebutton {
+    width: 100%;
+  }
+
+  .artworkdetail .h3{
+    padding: 0;
+    font-size: 30px;
+    text-align: left;
+    margin-top: 3rem;
+    margin-bottom: 0;
+
+  }
+
+  .artworkdetail p {
+    margin-top: 0;
+  }
+
+.order2 {
+    order: 1;
+    margin-bottom: 2rem;
+
+  }
+
+  .profile {
+    order: 2;
+  }
+
+  .subtotal .h3{
+    display: block;
+    text-align:right;
+    margin-right: 0;
+    margin-top: 1rem;
+
+  }
+
+
+}
+
+@media (max-width:45em) {
+  .navbar {
+    flex-basis: 100%;
+    display: none;
+  }
+
+  .mobilemenu {
+    display: inline;
+  }
+
+
+
+  .burgericon {
+    float: right;
+  }
+
+  .navlogo img{
+    text-align: left;
+    margin-left: 0;
+  }
+
+.navlogo span {
+
+  font-size:30px;
+  cursor:pointer
+}
+
+.artistdetail p {
+  text-align: left;
+  width: 100%;
+}
+
+
+
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
