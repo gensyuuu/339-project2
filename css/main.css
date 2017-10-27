@@ -273,7 +273,8 @@ img {
 .three-col {
   -ms-flex-grow: 1;
   flex-grow: 1;
-  width: 24rem;
+  /*width: 24rem;*/
+  flex-basis: 33.33%;
 }
 
 .one-col {
@@ -527,8 +528,8 @@ select {
 }
 
 .profile p {
-  margin: 0;
-
+  margin: auto;
+  width: 90%;
   padding-bottom: 0;
 }
 
@@ -735,6 +736,10 @@ select {
     display: none;
   }
 
+  .reviewlist {
+    display: block;
+  }
+
   .mobilefilter {
     display: block;
   }
@@ -779,6 +784,9 @@ select {
     margin-top: 1rem;
 
   }
+  .three-col {
+    flex-basis: 100%;
+  }
 
 
 }
@@ -814,6 +822,8 @@ select {
   text-align: left;
   width: 100%;
 }
+
+
 
 
 
